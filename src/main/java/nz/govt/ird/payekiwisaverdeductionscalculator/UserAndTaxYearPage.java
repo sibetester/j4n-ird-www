@@ -25,11 +25,9 @@ public class UserAndTaxYearPage {
     private void selectUser(String user) {
         if (user.contentEquals("Employee")) {
             $("#n11").click();
-        }
-        else if (user.contentEquals("Employer")) {
+        } else if (user.contentEquals("Employer")) {
             $("#n12").click();
-        }
-        else {
+        } else {
             LOGGER.warn("Invalid option for user: " + user);
         }
     }
